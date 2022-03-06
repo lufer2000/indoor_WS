@@ -1,18 +1,18 @@
 /* WIFI */
-const char* WIFI_SSID = "##########"; // Your Network SSID
-const char* WIFI_PWD = "##########";  // Your password
+const char* WIFI_SSID = "your ssid";
+const char* WIFI_PWD = "your password";
 
 // OpenWeatherMap Settings
 // Sign up here to get an API key:
 // https://docs.thingpulse.com/how-tos/openweathermap-key/
-String OPEN_WEATHER_MAP_APP_ID = "##########"; your Open weather map app id
+String OPEN_WEATHER_MAP_APP_ID = " ***** "; //Your map app id
 /*
 Go to https://openweathermap.org/find?q= and search for a location. Go through the
 result set and select the entry closest to the actual location you want to display 
 data for. It'll be a URL like https://openweathermap.org/city/2657896. The number
 at the end is what you assign to the constant below.
  */
-String OPEN_WEATHER_MAP_LOCATION_ID = "########"; // Your location ID
+String OPEN_WEATHER_MAP_LOCATION_ID = " ***** "; //your location id
 
 // Pick a language code from this list:
 // Arabic - ar, Bulgarian - bg, Catalan - ca, Czech - cz, German - de, Greek - el,
@@ -28,5 +28,5 @@ const uint8_t MAX_FORECASTS = 4;
 const boolean IS_METRIC = true;
 
 // Adjust according to your language
-const String WDAY_NAMES[] = {"SUN", "MON", "TUE", "WEN", "THU", "FRI", "SAT"};
-const String MONTH_NAMES[] = {"JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AGO", "SEP", "OCT", "NOV", "DEC"};
+const String WDAY_NAMES[] = {"SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"};
+const String MONTH_NAMES[] = {"JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"};

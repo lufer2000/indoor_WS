@@ -94,10 +94,10 @@ int numberOfOverlays = 1;
 #include <BlynkSimpleEsp8266.h>
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
-char auth[] = "#################"; // Enter your Auth Token in the Blynk App
+char auth[] = " ***** "; //Your Auth token
 
 //Thingspeak
-String apiKey = "###################";     //  Enter your Write API key from ThingSpeak
+String apiKey = " ******** ";     //  Enter your Write API key from ThingSpeak
 const char* server = "api.thingspeak.com";
 
 WiFiClient client;
@@ -119,8 +119,8 @@ inicio:
   }
   // You can send any value at any time.
   // Please don't send more that 10 values per second.
-  Blynk.virtualWrite(V5, h);
-  Blynk.virtualWrite(V6, t);
+  Blynk.virtualWrite(V5, h); // you can change de value
+  Blynk.virtualWrite(V6, t); // you can change de value
 }
 
 void setup()
@@ -458,9 +458,9 @@ inicio:
   if (client.connect(server, 80))  //   "184.106.153.149" or api.thingspeak.com
   {
     String postStr = apiKey;
-    postStr += "&field1=";
+    postStr += "&field1="; // field3 no caso do corredor; field1 no caso do escritório; field5 no caso extra
     postStr += String(t);
-    postStr += "&field2=";
+    postStr += "&field2="; // field4 no caso do corredor; field2 no caso do escritório; field6 no caso extra
     postStr += String(h);
     postStr += "\r\n\r\n";
 
