@@ -458,9 +458,9 @@ inicio:
   if (client.connect(server, 80))  //   "184.106.153.149" or api.thingspeak.com
   {
     String postStr = apiKey;
-    postStr += "&field1="; // field3 no caso do corredor; field1 no caso do escritório; field5 no caso extra
+    postStr += "&field1="; 
     postStr += String(t);
-    postStr += "&field2="; // field4 no caso do corredor; field2 no caso do escritório; field6 no caso extra
+    postStr += "&field2="; 
     postStr += String(h);
     postStr += "\r\n\r\n";
 
